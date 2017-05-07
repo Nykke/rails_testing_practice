@@ -6,4 +6,12 @@ class String
     #   false
     end
   end
+
+  def humanize
+    if self =~ /zombie/
+      raise RuntimeError
+    else
+    self.downcase.capitalize
+    end
+  end
 end
