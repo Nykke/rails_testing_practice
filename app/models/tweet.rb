@@ -1,3 +1,5 @@
 class Tweet < ApplicationRecord
-    validates :status, presence: true
+  validates :status, presence: true
+
+  belongs_to :zombie 
 end
