@@ -1,4 +1,5 @@
 require "test/unit"
+require_relative "string_extension"
 
 class StringExtensionTest < Test::Unit::TestCase
 
