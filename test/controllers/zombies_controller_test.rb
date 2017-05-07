@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ZombiesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @zombie = zombies(:one)
+    @zombie = zombies(:ash)
   end
 
   test "should get index" do
