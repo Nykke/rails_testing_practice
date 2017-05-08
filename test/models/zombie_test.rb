@@ -44,7 +44,8 @@ class ZombieTest < ActiveSupport::TestCase
  # this model that contain tweets is a better way to write it
  test "should contain tweets that belong to zombie" do
    z = zombies(:ash)
-   assert z.tweets.all? { |t| t.zombie == z }
+  #  assert z.tweets.all? { |t| t.zombie == z }
+  assert_equal tweets(:ash_1), z.tweets, "tweet doesn't belong to zombie"
  end
 
 
